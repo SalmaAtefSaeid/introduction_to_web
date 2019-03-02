@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Page</title>
+	<link rel="stylesheet" href="RegistrationStyle.css">
+</head>
+<body>
+	<header>
+		<input id="search" type="text" placeholder="Search..">
+		<a href="login.html" target="_blank"><b>Login</b></a>
+		<b> / </b>
+		<a href="registration.html" target="_blank"><b>Sign Up</b></a>
+	</header>
+	<main>
+		<form>
+			<fieldset>
+				<header id="fieldhead"><b>1. Account Information</b></header>
+				User Name:
+				<input type="text" name="username" maxlength="10" required>
+				Password:
+				<input type="password" name="password" required>
+				Confirm Password:
+				<input type="password" name="password" required>
+				Credit Card No:
+				<input type="number" name="password" required>
+			</fieldset>
+			<fieldset>
+				<header id="fieldhead"><b>2. Personal Information</b></header>
+				Name:
+				<input type="text" name="fullname" required>
+				Date of Birth:
+				<input type="date" name="dateofbirth" required>
+				Favorite Color:
+				<input type="color" name="pickcolor">
+				Profile Photo(s):
+				<input type="file" name="pickphoto" multiple>
+				Favorite Browser:
+				<input type="text" name="favoritebrowser" list="browsers">
+				<datalist id="browsers">
+					<option value="Chrome"/>
+					<option value="Firefox"/>
+					<option value="Edge"/>
+				</datalist>
+			</fieldset>
+			<fieldset>
+				<header id="fieldhead"><b>3. Company Information</b></header>
+				No. of Employees:
+				<input type="number" name="employeesnumber">
+				Estimated Revenue:
+				<input type="range" name="revenue">
+			</fieldset>
+			<fieldset>
+				<header id="fieldhead"><b>4. Contact Information</b></header>
+				Email Address(es):
+				<input type="email" name="email" required multiple>
+				Phone Number:
+				<input type="tel" name="phoneNumber">
+				Website URL:
+				<input type="url" name="website">
+			</fieldset>
+			<fieldset>
+				<input type="submit" value="Submit">
+				<input type="reset" value="Cancel">
+			</fieldset>
+		</form>
+	</main>
+	<footer>
+		<a href="HomePage.html" target="_blank"><b>About Us</b></a>  
+		<a href="Sites Directory page.html" target="_blank"><b>Contact Us</b></a>  
+		<a href="firstPage.html" target="_blank"><b>Home</b></a>
+		<p id="foot">copyright&copy; 2019 All rights reserved</p>
+	</footer>
+</body>
+</html>
